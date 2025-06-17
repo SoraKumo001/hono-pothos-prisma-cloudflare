@@ -1,0 +1,14 @@
+services:
+  postgres:
+    container_name: pothos-hono-cloudflare-postgres
+    image: postgres:alpine
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pothos-hono-cloudflare-postgres-vol:/var/lib/postgresql/data
+    ports:
+      - "35432:5432"
+volumes:
+  pothos-hono-cloudflare-postgres-vol:

@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hono-pothos-prisma-cloudflare",
+  "compatibility_date": "2025-05-09",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env"
+  ],
+  "main": "./src/index.ts",
+  "minify": true,
+  "observability": {
+    "enabled": true
+  },
+  "hyperdrive": [
+    {
+      "binding": "database",
+      // The name of the binding is used to access the database in your code.
+      "id": "8b49fc29a8444c469c392e20662f40de",
+      "localConnectionString": "postgresql://postgres:password@localhost:35432/postgres?schema=pothos-hono-postgres"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "hono-pothos-prisma-cloudflare",
+  "version": "1.0.0",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    "require": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.js"
+  },
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:hono": "wrangler dev",
+    "dev:docker": "pnpm docker:start && pnpm prisma:migrate && pnpm prisma:seed",
+    "deploy": "wrangler deploy",
+    "deploy:secret": "wrangler secret put SECRET",
+    "lint": "npx eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "docker:start": "docker compose -p pothos-prisma-generator -f docker/docker-compose.yml up -d",
+    "prisma:generate": "prisma generate",
+    "prisma:format": "prisma format",
+    "prisma:migrate": "prisma migrate dev -n migrate",
+    "prisma:reset": " prisma migrate reset --schema=prisma/schema.prisma -f",
+    "prisma:seed": "tsx prisma/seeds",
+    "production:setup": "next-exec -c production -- prisma migrate dev -n migrate && next-exec -c production -- tsx prisma/seeds",
+    "pothos:schema": "tsx bin/createSchema"
+  },
+  "dependencies": {
+    "@hono/graphql-server": "0.6.1",
+    "@hono/node-server": "1.14.4",
+    "@pothos/core": "^4.6.2",
+    "@pothos/plugin-prisma": "^4.8.2",
+    "@pothos/plugin-prisma-utils": "^1.3.1",
+    "@prisma/client": "^6.9.0",
+    "apollo-explorer": "1.1.3",
+    "graphql": "^16.11.0",
+    "graphql-auto-query": "^1.0.4",
+    "graphql-tag": "^2.12.6",
+    "hono": "^4.7.11",
+    "jose": "^6.0.11",
+    "pothos-prisma-generator": "^1.3.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.29.0",
+    "@prisma/adapter-pg": "6.9.0",
+    "@types/node": "24.0.3",
+    "cpy-cli": "^5.0.0",
+    "eslint": "9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-import-resolver-typescript": "^4.4.3",
+    "eslint-plugin-import": "^2.31.0",
+    "npm-run-all": "4.1.5",
+    "prisma": "^6.9.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "typescript-transform-paths": "^3.5.5",
+    "wrangler": "4.20.0"
+  },
+  "resolutions": {
+    "async-function": "0.1.0"
+  },
+  "author": "SoraKumo <info@croud.jp>",
+  "repository": "https://github.com/SoraKumo001/hono-pothos-prisma.git"
+}
