@@ -4,7 +4,7 @@ import { getContext } from "hono/context-storage";
 
 const getAdapter = (datasourceUrl: string) => {
   const url = new URL(datasourceUrl);
-  const schema = url.searchParams.get("schema") ?? undefined;
+  const schema = url.searchParams.get("schema") ?? process.env.SCHEMA;
   return new PrismaPg({ connectionString: datasourceUrl }, { schema });
 };
 

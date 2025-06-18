@@ -11,12 +11,15 @@
   "observability": {
     "enabled": true
   },
+  "vars": {
+    "SCHEMA": "hono-pothos-prisma-cloudflare"
+  },
   "hyperdrive": [
     {
       "binding": "database",
       // The name of the binding is used to access the database in your code.
       "id": "8b49fc29a8444c469c392e20662f40de",
-      "localConnectionString": "postgresql://postgres:password@localhost:35432/postgres?schema=pothos-hono-postgres"
+      "localConnectionString": "postgresql://postgres:password@localhost:35432/postgres?schema=hono-pothos-prisma-cloudflare"
     }
   ]
 }

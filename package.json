@@ -19,7 +19,7 @@
     "lint": "npx eslint ./src",
     "lint:fix": "eslint --fix ./src",
     "docker:start": "docker compose -p pothos-prisma-generator -f docker/docker-compose.yml up -d",
-    "prisma:generate": "prisma generate",
+    "prisma:generate": "prisma generate --no-engine",
     "prisma:format": "prisma format",
     "prisma:migrate": "prisma migrate dev -n migrate",
     "prisma:reset": " prisma migrate reset --schema=prisma/schema.prisma -f",
