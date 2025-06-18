@@ -13,22 +13,22 @@ importers:
     dependencies:
       '@hono/graphql-server':
         specifier: 0.6.1
-        version: 0.6.1(hono@4.7.11)
+        version: 0.6.1(hono@4.8.0)
       '@hono/node-server':
         specifier: 1.14.4
-        version: 1.14.4(hono@4.7.11)
+        version: 1.14.4(hono@4.8.0)
       '@pothos/core':
         specifier: ^4.6.2
         version: 4.6.2(graphql@16.11.0)
       '@pothos/plugin-prisma':
         specifier: ^4.8.2
-        version: 4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3)
+        version: 4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3)
       '@pothos/plugin-prisma-utils':
         specifier: ^1.3.1
-        version: 1.3.1(@pothos/core@4.6.2(graphql@16.11.0))(@pothos/plugin-prisma@4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3))(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)
+        version: 1.3.1(@pothos/core@4.6.2(graphql@16.11.0))(@pothos/plugin-prisma@4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3))(@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)
       '@prisma/client':
-        specifier: ^6.9.0
-        version: 6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3)
+        specifier: ^6.10.0
+        version: 6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3)
       apollo-explorer:
         specifier: 1.1.3
         version: 1.1.3
@@ -42,8 +42,8 @@ importers:
         specifier: ^2.12.6
         version: 2.12.6(graphql@16.11.0)
       hono:
-        specifier: ^4.7.11
-        version: 4.7.11
+        specifier: ^4.8.0
+        version: 4.8.0
       jose:
         specifier: ^6.0.11
         version: 6.0.11
@@ -55,8 +55,8 @@ importers:
         specifier: 9.29.0
         version: 9.29.0
       '@prisma/adapter-pg':
-        specifier: 6.9.0
-        version: 6.9.0(pg@8.16.0)
+        specifier: 6.10.0
+        version: 6.10.0(pg@8.16.0)
       '@types/node':
         specifier: 24.0.3
         version: 24.0.3
@@ -79,8 +79,8 @@ importers:
         specifier: 4.1.5
         version: 4.1.5
       prisma:
-        specifier: ^6.9.0
-        version: 6.9.0(typescript@5.8.3)
+        specifier: ^6.10.0
+        version: 6.10.0(typescript@5.8.3)
       tsconfig-paths:
         specifier: ^4.2.0
         version: 4.2.0
@@ -97,8 +97,8 @@ importers:
         specifier: ^3.5.5
         version: 3.5.5(typescript@5.8.3)
       wrangler:
-        specifier: 4.20.0
-        version: 4.20.0
+        specifier: 4.20.1
+        version: 4.20.1
 
 packages:
 
@@ -106,8 +106,8 @@ packages:
     resolution: {integrity: sha512-+tv3z+SPp+gqTIcImN9o0hqE9xyfQjI1XD9pL6NuKjua9B1y7mNYv0S9cP+QEbA4ppVgGZEmKOvHX5G5Ei1CVA==}
     engines: {node: '>=18.0.0'}
 
-  '@cloudflare/unenv-preset@2.3.2':
-    resolution: {integrity: sha512-MtUgNl+QkQyhQvv5bbWP+BpBC1N0me4CHHuP2H4ktmOMKdB/6kkz/lo+zqiA4mEazb4y+1cwyNjVrQ2DWeE4mg==}
+  '@cloudflare/unenv-preset@2.3.3':
+    resolution: {integrity: sha512-/M3MEcj3V2WHIRSW1eAQBPRJ6JnGQHc6JKMAPLkDb7pLs3m6X9ES/+K3ceGqxI6TKeF32AWAi7ls0AYzVxCP0A==}
     peerDependencies:
       unenv: 2.0.0-rc.17
       workerd: ^1.20250508.0
@@ -115,32 +115,32 @@ packages:
       workerd:
         optional: true
 
-  '@cloudflare/workerd-darwin-64@1.20250604.0':
-    resolution: {integrity: sha512-PI6AWAzhHg75KVhYkSWFBf3HKCHstpaKg4nrx6LYZaEvz0TaTz+JQpYU2fNAgGFmVsK5xEzwFTGh3DAVAKONPw==}
+  '@cloudflare/workerd-darwin-64@1.20250612.0':
+    resolution: {integrity: sha512-IpL/tOvNY04n2hvp/XGdOGjeMDycEjbwJL8gJ0kenBFBa13EE82I61ceA56kuCiEdb1vBv3O+xiD9zN6AuQlmQ==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [darwin]
 
-  '@cloudflare/workerd-darwin-arm64@1.20250604.0':
-    resolution: {integrity: sha512-hOiZZSop7QRQgGERtTIy9eU5GvPpIsgE2/BDsUdHMl7OBZ7QLniqvgDzLNDzj0aTkCldm9Yl/Z+C7aUgRdOccw==}
+  '@cloudflare/workerd-darwin-arm64@1.20250612.0':
+    resolution: {integrity: sha512-Hb9GWzLT4ydBYfGE29jxZFkx58NEA+oRMuGP358A6PUZ9UEDYWTDhskVQovhjELZMgOppUYXN2v/Je3sO1anpg==}
     engines: {node: '>=16'}
     cpu: [arm64]
     os: [darwin]
 
-  '@cloudflare/workerd-linux-64@1.20250604.0':
-    resolution: {integrity: sha512-S0R9r7U4nv9qejYygQj01hArC4KUbQQ4u29rvegR0MGoXZY8AHIEuJxon0kE7r7aWFJxvl4W3tOH+5hwW51LYw==}
+  '@cloudflare/workerd-linux-64@1.20250612.0':
+    resolution: {integrity: sha512-7kOA1sCfl9m2osolplDM9XqyBPf5KupvDs4UbD2kQq0zfd+u6acLz/YB9Q5tsVQIyhQoP32Oe+kr6IZJBImq9A==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [linux]
 
-  '@cloudflare/workerd-linux-arm64@1.20250604.0':
-    resolution: {integrity: sha512-BTFU/rXpNy03wpeueI2P7q1vVjbg2V6mCyyFGqDqMn2gSVYXH1G0zFNolV13PQXa0HgaqM6oYnqtAxluqbA+kQ==}
+  '@cloudflare/workerd-linux-arm64@1.20250612.0':
+    resolution: {integrity: sha512-x2UsZhfacZftD/kpDE2mtAlrLZPmkwRInFHJc7uIl8mvovQqVKMBkexH7dkfrgvBV98S2hOjxqFKP9mETuQQAQ==}
     engines: {node: '>=16'}
     cpu: [arm64]
     os: [linux]
 
-  '@cloudflare/workerd-windows-64@1.20250604.0':
-    resolution: {integrity: sha512-tW/U9/qDmDZBeoEVcK5skb2uouVAMXMzt7o/uGvaIFLeZsQkOp4NBmvoQQd+nbOc7nVCJIwFoSMokd89AhzCkA==}
+  '@cloudflare/workerd-windows-64@1.20250612.0':
+    resolution: {integrity: sha512-CeYe4OM5doIVGsOtrmDTrIBV2/wa/SPREEXH/N7ZCEs7mRhsTNFOwmctC0CYe3ZiutJ02dJmmyh/CIij2mkOLQ==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [win32]
@@ -688,13 +688,13 @@ packages:
       graphql: ^16.10.0
       typescript: '>=4.7.2'
 
-  '@prisma/adapter-pg@6.9.0':
-    resolution: {integrity: sha512-AWCg8TvLi0VmxPzFhORebyUTmU6eCy9bviuwHqA3ZiipWHTagg/kj1D4b2oaJzXrFRFKnOiSJdFKcjODU0vu5A==}
+  '@prisma/adapter-pg@6.10.0':
+    resolution: {integrity: sha512-uA8bu8b7GfVFLz3pqlV7vnh4+ohNjXpMks/67snm2/H8UxAPkViWnOhoNG2DKD8RAZQm0Ka+XNK+CK9onF6Teg==}
     peerDependencies:
       pg: ^8.11.3
 
-  '@prisma/client@6.9.0':
-    resolution: {integrity: sha512-Gg7j1hwy3SgF1KHrh0PZsYvAaykeR0PaxusnLXydehS96voYCGt1U5zVR31NIouYc63hWzidcrir1a7AIyCsNQ==}
+  '@prisma/client@6.10.0':
+    resolution: {integrity: sha512-C+3A6sPt8EwUlNwsbT22IoUq0O+wXXA4Sw39UmCATlfa8HVP5r0X/l9xGyELhfSmmO0sjgSAl7qmlCHS6Dkekw==}
     engines: {node: '>=18.18'}
     peerDependencies:
       prisma: '*'
@@ -705,8 +705,11 @@ packages:
       typescript:
         optional: true
 
-  '@prisma/config@6.9.0':
-    resolution: {integrity: sha512-Wcfk8/lN3WRJd5w4jmNQkUwhUw0eksaU/+BlAJwPQKW10k0h0LC9PD/6TQFmqKVbHQL0vG2z266r0S1MPzzhbA==}
+  '@prisma/config@6.10.0':
+    resolution: {integrity: sha512-9aA88Vub9O7zdb52PuJg88cN2GCjfY2I45CIttJe7fS5EyvTRRGE/PDQlbjTG9ij9+leD47fGLQCqYDpyCE5Iw==}
+
+  '@prisma/debug@6.10.0':
+    resolution: {integrity: sha512-vzVu0Z3DfCzyx0m7LPZgdA/M7opv7B2R7agNLjh1PpIapCqHo/dwoXoj3Kl25A6TkmhexJzOZKedmhpXsMBwGA==}
 
   '@prisma/debug@6.9.0':
     resolution: {integrity: sha512-bFeur/qi/Q+Mqk4JdQ3R38upSYPebv5aOyD1RKywVD+rAMLtRkmTFn28ZuTtVOnZHEdtxnNOCH+bPIeSGz1+Fg==}
@@ -714,17 +717,17 @@ packages:
   '@prisma/dmmf@6.9.0':
     resolution: {integrity: sha512-iMK+VwpZBhmpI67IKkHgnkJkoJcTK8e7w0cjnSFwdQY9nhf6GxS07SZVSvaQCZgBU/DJRANYDqddWyzkcAi4uw==}
 
-  '@prisma/driver-adapter-utils@6.9.0':
-    resolution: {integrity: sha512-HtugVGw5y50drVTboKubHJeOmoUQfDZa8vJBhzgR+iZ8KfUsJuTIU20rNd7Hi/S+JdLJGJXIxzbXiQABMNArjw==}
+  '@prisma/driver-adapter-utils@6.10.0':
+    resolution: {integrity: sha512-+nApo/19QbfPy6smSwZValpNYbHrcI3ew6vhogYgJEijsB09Mxu2Wo+JDZIGF21DQq6RdRWeBFnJtUHLISlw4Q==}
 
-  '@prisma/engines-version@6.9.0-10.81e4af48011447c3cc503a190e86995b66d2a28e':
-    resolution: {integrity: sha512-Qp9gMoBHgqhKlrvumZWujmuD7q4DV/gooEyPCLtbkc13EZdSz2RsGUJ5mHb3RJgAbk+dm6XenqG7obJEhXcJ6Q==}
+  '@prisma/engines-version@6.10.0-43.aee10d5a411e4360c6d3445ce4810ca65adbf3e8':
+    resolution: {integrity: sha512-Dy7cS5Sz/kzdj2nrYTiPfycf/ZeQXFoIcXgTLmYHpuDX0rGITEGe7JSTSNnLYRUnjTHerDTPGPJCiDeyb6lPBg==}
 
-  '@prisma/engines@6.9.0':
-    resolution: {integrity: sha512-im0X0bwDLA0244CDf8fuvnLuCQcBBdAGgr+ByvGfQY9wWl6EA+kRGwVk8ZIpG65rnlOwtaWIr/ZcEU5pNVvq9g==}
+  '@prisma/engines@6.10.0':
+    resolution: {integrity: sha512-g/VL/J+b1rjzvPLZWSjOt/iWX/As44IF65x0XrsvwjD1UI0hLHzDAVx3AJz4k4cNsFzEQqVl/rLa6ICsLy8v5w==}
 
-  '@prisma/fetch-engine@6.9.0':
-    resolution: {integrity: sha512-PMKhJdl4fOdeE3J3NkcWZ+tf3W6rx3ht/rLU8w4SXFRcLhd5+3VcqY4Kslpdm8osca4ej3gTfB3+cSk5pGxgFg==}
+  '@prisma/fetch-engine@6.10.0':
+    resolution: {integrity: sha512-7An09F6Xe886gSwcj1HEY/0LBuD4IR0ZnKbNv4d0kMnmNzGCz+IK4XRnd/yOkiptIks0nF+igLEin5MEoBejfA==}
 
   '@prisma/generator-helper@6.9.0':
     resolution: {integrity: sha512-t3F2M0LR2PYERUQ4pXbMF0G8navRqDWynN9EqOu1WnbOBhPMUYF/Y40RxSe7LAKVqJ0PbNO0rc8MBDcQkFWQqg==}
@@ -732,8 +735,8 @@ packages:
   '@prisma/generator@6.9.0':
     resolution: {integrity: sha512-4f0eZeLPB8Q/vmB7XHV7krn6Pu2Q4kLZLlC42LaBLfkHLdsYC/jsVCOQohKKHsq/ONpfgrzwYWf3ZBVHBZgNSA==}
 
-  '@prisma/get-platform@6.9.0':
-    resolution: {integrity: sha512-/B4n+5V1LI/1JQcHp+sUpyRT1bBgZVPHbsC4lt4/19Xp4jvNIVcq5KYNtQDk5e/ukTSjo9PZVAxxy9ieFtlpTQ==}
+  '@prisma/get-platform@6.10.0':
+    resolution: {integrity: sha512-6xqX2cxC2l0JHySyyFlXZ4QIESeEmkvSJfGy2r/NsQG+vjxBNDrlwDOgh+aQI1ivbgqwFRjSXuUjl/yd2Za2HQ==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -1470,8 +1473,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.7.11:
-    resolution: {integrity: sha512-rv0JMwC0KALbbmwJDEnxvQCeJh+xbS3KEWW5PC9cMJ08Ur9xgatI0HmtgYZfOdOSOeYsp5LO2cOhdI8cLEbDEQ==}
+  hono@4.8.0:
+    resolution: {integrity: sha512-NoiHrqJxoe1MYXqW+/0/Q4NCizKj2Ivm4KmX8mOSBtw9UJ7KYaOGKkO7csIwO5UlZpfvVRdcgiMb0GGyjEjtcw==}
     engines: {node: '>=16.9.0'}
 
   hosted-git-info@2.8.9:
@@ -1691,8 +1694,8 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
 
-  miniflare@4.20250604.1:
-    resolution: {integrity: sha512-HJQ9YhH0F0fI73Vsdy3PNVau+PfHZYK7trI5WJEcbfl5HzqhMU0DRNtA/G5EXQgiumkjrmbW4Zh1DVTtsqICPg==}
+  miniflare@4.20250612.0:
+    resolution: {integrity: sha512-zMUKXBS8Ru1DcmX8dSCmxm7ZjEd7jHQlZpJMNT1/LqxHo3KEye/CHgoEZ1vdsH7T3fe0I0qRcRQx7IWhlXnN1w==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -1921,8 +1924,8 @@ packages:
   printable-characters@1.0.42:
     resolution: {integrity: sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==}
 
-  prisma@6.9.0:
-    resolution: {integrity: sha512-resJAwMyZREC/I40LF6FZ6rZTnlrlrYrb63oW37Gq+U+9xHwbyMSPJjKtM7VZf3gTO86t/Oyz+YeSXr3CmAY1Q==}
+  prisma@6.10.0:
+    resolution: {integrity: sha512-hyfwi+HpH2lHlRUj3O6CtWg44D7iuxi/O+xoLIsDjUNvriyFIVlw4a+8facnByZnm4Lt54+ZzJkFvkKBm7bIug==}
     engines: {node: '>=18.18'}
     hasBin: true
     peerDependencies:
@@ -2252,17 +2255,17 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  workerd@1.20250604.0:
-    resolution: {integrity: sha512-sHz9R1sxPpnyq3ptrI/5I96sYTMA2+Ljm75oJDbmEcZQwNyezpu9Emerzt3kzzjCJQqtdscGOidWv4RKGZXzAA==}
+  workerd@1.20250612.0:
+    resolution: {integrity: sha512-YWCjj4uZf3eH32epQy/c7tKWOInAswgFRAJoH6I/EY08OJKDfoJtKvRZj5f675KoJlKTPAoJ1ig/oE+RUKP3uw==}
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.20.0:
-    resolution: {integrity: sha512-gxMLaSnYp3VLdGPZu4fc/9UlB7PnSVwni25v32NM9szG2yTt+gx5RunWzmoLplplIfEMkBuV3wA47vccNu7zcA==}
+  wrangler@4.20.1:
+    resolution: {integrity: sha512-XbjBqpi2vTJSxqacovcGK33UtCrnmUAC69kJWLD2UvIZc5Ixeh0jAdjd6N1mcQB2M1/A2jGQSA4Pkoqw/Xw3bQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
-      '@cloudflare/workers-types': ^4.20250604.0
+      '@cloudflare/workers-types': ^4.20250612.0
     peerDependenciesMeta:
       '@cloudflare/workers-types':
         optional: true
@@ -2299,25 +2302,25 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/unenv-preset@2.3.2(unenv@2.0.0-rc.17)(workerd@1.20250604.0)':
+  '@cloudflare/unenv-preset@2.3.3(unenv@2.0.0-rc.17)(workerd@1.20250612.0)':
     dependencies:
       unenv: 2.0.0-rc.17
     optionalDependencies:
-      workerd: 1.20250604.0
+      workerd: 1.20250612.0
 
-  '@cloudflare/workerd-darwin-64@1.20250604.0':
+  '@cloudflare/workerd-darwin-64@1.20250612.0':
     optional: true
 
-  '@cloudflare/workerd-darwin-arm64@1.20250604.0':
+  '@cloudflare/workerd-darwin-arm64@1.20250612.0':
     optional: true
 
-  '@cloudflare/workerd-linux-64@1.20250604.0':
+  '@cloudflare/workerd-linux-64@1.20250612.0':
     optional: true
 
-  '@cloudflare/workerd-linux-arm64@1.20250604.0':
+  '@cloudflare/workerd-linux-arm64@1.20250612.0':
     optional: true
 
-  '@cloudflare/workerd-windows-64@1.20250604.0':
+  '@cloudflare/workerd-windows-64@1.20250612.0':
     optional: true
 
   '@colors/colors@1.6.0': {}
@@ -2538,14 +2541,14 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/graphql-server@0.6.1(hono@4.7.11)':
+  '@hono/graphql-server@0.6.1(hono@4.8.0)':
     dependencies:
       graphql: 16.11.0
-      hono: 4.7.11
+      hono: 4.8.0
 
-  '@hono/node-server@1.14.4(hono@4.7.11)':
+  '@hono/node-server@1.14.4(hono@4.8.0)':
     dependencies:
-      hono: 4.7.11
+      hono: 4.8.0
 
   '@humanfs/core@0.19.1': {}
 
@@ -2667,59 +2670,61 @@ snapshots:
     dependencies:
       graphql: 16.11.0
 
-  '@pothos/plugin-prisma-utils@1.3.1(@pothos/core@4.6.2(graphql@16.11.0))(@pothos/plugin-prisma@4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3))(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)':
+  '@pothos/plugin-prisma-utils@1.3.1(@pothos/core@4.6.2(graphql@16.11.0))(@pothos/plugin-prisma@4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3))(@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)':
     dependencies:
       '@pothos/core': 4.6.2(graphql@16.11.0)
-      '@pothos/plugin-prisma': 4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3)
-      '@prisma/client': 6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3)
+      '@pothos/plugin-prisma': 4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3)
+      '@prisma/client': 6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3)
       '@prisma/generator-helper': 6.9.0
       graphql: 16.11.0
 
-  '@pothos/plugin-prisma@4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3)':
+  '@pothos/plugin-prisma@4.8.2(@pothos/core@4.6.2(graphql@16.11.0))(@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3))(graphql@16.11.0)(typescript@5.8.3)':
     dependencies:
       '@pothos/core': 4.6.2(graphql@16.11.0)
-      '@prisma/client': 6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3)
+      '@prisma/client': 6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3)
       '@prisma/generator-helper': 6.9.0
       graphql: 16.11.0
       typescript: 5.8.3
 
-  '@prisma/adapter-pg@6.9.0(pg@8.16.0)':
+  '@prisma/adapter-pg@6.10.0(pg@8.16.0)':
     dependencies:
-      '@prisma/driver-adapter-utils': 6.9.0
+      '@prisma/driver-adapter-utils': 6.10.0
       pg: 8.16.0
       postgres-array: 3.0.4
 
-  '@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3)':
+  '@prisma/client@6.10.0(prisma@6.10.0(typescript@5.8.3))(typescript@5.8.3)':
     optionalDependencies:
-      prisma: 6.9.0(typescript@5.8.3)
+      prisma: 6.10.0(typescript@5.8.3)
       typescript: 5.8.3
 
-  '@prisma/config@6.9.0':
+  '@prisma/config@6.10.0':
     dependencies:
       jiti: 2.4.2
+
+  '@prisma/debug@6.10.0': {}
 
   '@prisma/debug@6.9.0': {}
 
   '@prisma/dmmf@6.9.0': {}
 
-  '@prisma/driver-adapter-utils@6.9.0':
+  '@prisma/driver-adapter-utils@6.10.0':
     dependencies:
-      '@prisma/debug': 6.9.0
+      '@prisma/debug': 6.10.0
 
-  '@prisma/engines-version@6.9.0-10.81e4af48011447c3cc503a190e86995b66d2a28e': {}
+  '@prisma/engines-version@6.10.0-43.aee10d5a411e4360c6d3445ce4810ca65adbf3e8': {}
 
-  '@prisma/engines@6.9.0':
+  '@prisma/engines@6.10.0':
     dependencies:
-      '@prisma/debug': 6.9.0
-      '@prisma/engines-version': 6.9.0-10.81e4af48011447c3cc503a190e86995b66d2a28e
-      '@prisma/fetch-engine': 6.9.0
-      '@prisma/get-platform': 6.9.0
+      '@prisma/debug': 6.10.0
+      '@prisma/engines-version': 6.10.0-43.aee10d5a411e4360c6d3445ce4810ca65adbf3e8
+      '@prisma/fetch-engine': 6.10.0
+      '@prisma/get-platform': 6.10.0
 
-  '@prisma/fetch-engine@6.9.0':
+  '@prisma/fetch-engine@6.10.0':
     dependencies:
-      '@prisma/debug': 6.9.0
-      '@prisma/engines-version': 6.9.0-10.81e4af48011447c3cc503a190e86995b66d2a28e
-      '@prisma/get-platform': 6.9.0
+      '@prisma/debug': 6.10.0
+      '@prisma/engines-version': 6.10.0-43.aee10d5a411e4360c6d3445ce4810ca65adbf3e8
+      '@prisma/get-platform': 6.10.0
 
   '@prisma/generator-helper@6.9.0':
     dependencies:
@@ -2729,9 +2734,9 @@ snapshots:
 
   '@prisma/generator@6.9.0': {}
 
-  '@prisma/get-platform@6.9.0':
+  '@prisma/get-platform@6.10.0':
     dependencies:
-      '@prisma/debug': 6.9.0
+      '@prisma/debug': 6.10.0
 
   '@rtsao/scc@1.1.0': {}
 
@@ -3634,7 +3639,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.7.11: {}
+  hono@4.8.0: {}
 
   hosted-git-info@2.8.9: {}
 
@@ -3835,7 +3840,7 @@ snapshots:
 
   mime@3.0.0: {}
 
-  miniflare@4.20250604.1:
+  miniflare@4.20250612.0:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       acorn: 8.14.0
@@ -3845,7 +3850,7 @@ snapshots:
       sharp: 0.33.5
       stoppable: 1.1.0
       undici: 5.29.0
-      workerd: 1.20250604.0
+      workerd: 1.20250612.0
       ws: 8.18.0
       youch: 3.3.4
       zod: 3.22.3
@@ -4065,10 +4070,10 @@ snapshots:
 
   printable-characters@1.0.42: {}
 
-  prisma@6.9.0(typescript@5.8.3):
+  prisma@6.10.0(typescript@5.8.3):
     dependencies:
-      '@prisma/config': 6.9.0
-      '@prisma/engines': 6.9.0
+      '@prisma/config': 6.10.0
+      '@prisma/engines': 6.10.0
     optionalDependencies:
       typescript: 5.8.3
 
@@ -4525,24 +4530,24 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  workerd@1.20250604.0:
+  workerd@1.20250612.0:
     optionalDependencies:
-      '@cloudflare/workerd-darwin-64': 1.20250604.0
-      '@cloudflare/workerd-darwin-arm64': 1.20250604.0
-      '@cloudflare/workerd-linux-64': 1.20250604.0
-      '@cloudflare/workerd-linux-arm64': 1.20250604.0
-      '@cloudflare/workerd-windows-64': 1.20250604.0
+      '@cloudflare/workerd-darwin-64': 1.20250612.0
+      '@cloudflare/workerd-darwin-arm64': 1.20250612.0
+      '@cloudflare/workerd-linux-64': 1.20250612.0
+      '@cloudflare/workerd-linux-arm64': 1.20250612.0
+      '@cloudflare/workerd-windows-64': 1.20250612.0
 
-  wrangler@4.20.0:
+  wrangler@4.20.1:
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.0
-      '@cloudflare/unenv-preset': 2.3.2(unenv@2.0.0-rc.17)(workerd@1.20250604.0)
+      '@cloudflare/unenv-preset': 2.3.3(unenv@2.0.0-rc.17)(workerd@1.20250612.0)
       blake3-wasm: 2.1.5
       esbuild: 0.25.4
-      miniflare: 4.20250604.1
+      miniflare: 4.20250612.0
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.17
-      workerd: 1.20250604.0
+      workerd: 1.20250612.0
     optionalDependencies:
       fsevents: 2.3.3
     transitivePeerDependencies:
